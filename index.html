@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!--  UNICONS  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="util.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--  NAV BAR  -->
+        <!-- <nav class="navH flex sticky" id="navbar">
+            <img src="photos/J.png">
+            <div class="leftNav flex item-center">
+                <ul class="flex" id="sideMenu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav> -->
+        <div class="ContainerHome">
+            <div class="MenuHome">
+                <nav class="containerMenu">
+                    <div class="ContainerNav flex">
+                        <img src="photos/J.png">
+                        <div class="navMenu flex">
+                            <ul class="flex" id="sideMenu">
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <i class="fa fa-solid fa-x" onclick="closeMenu()">X</i>
+                            </ul>
+                        </div>
+                        <i class="fa fa-solid fa-bars" onclick="openMenu()"></i>
+                    </div>
+                </nav> 
+                <!-- HOME -->
+                <div class="home flex" id="Home">
+                    <div class="homeleft flex">
+                        <div class="homeSmall">Welcome to my World</div>
+                        <div class="homelarge">Hi, I am Jaskiran Kaur</div>
+                        <div class="homelargeM">Software Developer</div>
+                        <div class="homeSmall">Explore more about me below</div>
+                    </div>
+                    <div class="homeright flex">
+                        <img src="photos/me.jpeg" class="homeRightimg">
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+    <!-- ABOUT -->
+    <div class="about flex" id="About">
+        <!-- white left side -->
+        <div class="aboutLeft flex"></div>
+
+        <!-- content of about -->
+        <div class="aboutText flex">
+            <div class="aboutH">About Me</div>
+            <div class="aboutINFO">
+                I am currently in my third year pursuing a Bachelor's degree in Technology (B.Tech).I aspire to carve my path as a software engineer, and my current focus lies in honing my skills in frontend development.I am on a continuous journey of self-improvement and learning within this domain. I'm dedicated to transforming my passion into a fulfilling career
+            </div>
+
+            <div class="info flex">
+                <ul class="flex">
+                    <li class="tab-links activeLink" onclick="opentab('skills')">Main Skills</li>
+                    <li class="tab-links" onclick="opentab('education')">Education</li>
+                </ul>
+            </div>
+            
+            <div class="main flex activeTag" id="skills">
+                <div class="main1">
+                    <div class="mainHeading"> Software Developer </div>
+                    <div class="mainbrief"> DSA, ALGORITHMS</div>
+                </div>
+                <div class="main2">
+                    <div class="mainHeading"> Frontend Developer </div>
+                    <div class="mainbrief">HTML, CSS, JAVASCRIPT</div>
+                </div>
+                <div class="main3">
+                    <div class="mainHeading"> User Experience design </div>
+                    <div class="mainbrief">Delight the user and make it work</div>
+                </div>
+            </div>
+
+            <div id="education" class="main flex">
+                <div class="main1">
+                    <div class="mainHeading">Guru Teg Bahadur Institute of Technology <span class="college"> B.Tech (2021 - 2025)</span></div>
+                    <div class="mainbrief">CGPA - 8.7</div>
+                </div>
+                <div class="main2">
+                    <div class="mainHeading"> Adarsh Public School <span class="school"> XII (2020 - 2021)</span></div>
+                    <div class="mainbrief">Percentage - 93.6%</div>
+                </div>
+                <div class="main3">
+                    <div class="mainHeading"> Adarsh Public School <span class="school"> X (2018 - 2019)</span></div>
+                    <div class="mainbrief">Percentage - 95.8%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div class="portfolio flex" id="portfolio">
+        <div class="container flex">
+            <h1 class="workH">My Work</h1>
+            <div class="workList flex">
+                <div class="work">
+                    <img src="photos/tic.png">
+                    <div class="layer flex item-center">
+                        <h3>Tic-Tac Toe Website</h3>
+                        <p>Classic online Tic Tac Toe game for timeless entertainment. Two members can play at a time. Enjoying playing with friends and family</p>
+                        <a href="https://jaskirank1.github.io/Tic-Tac-Toe-Game/">Click Here to Play the Game</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photos/todo.jpg">
+                    <div class="layer flex item-center">
+                        <h3>TO-DO LIST Website</h3>
+                        <p>Effortlessly organize tasks on our user-friendly to-do list website. Streamlined design, easy task management—boost productivity with simplicity. Start accomplishing goals today!</p>
+                        <a href="https://jaskirank1.github.io/TO-DO-List/">Click Here to view To-Do List website</a>    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photos/restaurant.png">
+                    <div class="layer flex item-center">
+                        <h3>Restaurant Website</h3>
+                        <p>Just a baisc Front-end design of Restaurant website containing the contact page. Work of this webiste is still in progress.</p>
+                        <a href="https://jaskirank1.github.io/Restaurant-Website/">Click Here to view Restaurant Website</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <h1 class="workH">Contact Me</h1>
+            <div class="row1 flex item-center">
+                <div class="contact-left">    
+                    <p><a href="mailto:kiran18202@gmail.com"><i class="fa fa-solid fa-paper-plane"></i>kiran18202@gmail.com</a></p>
+                    <p><a href="tel:9315867536"><i class="fa fa-solid fa-phone"></i>9315867536</a></p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fa fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jaskiran-kaur-4a275622b/"><i class="fa fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="photos/Jaskiran (6).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <!-- add names of the field in the google sheets -->
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
